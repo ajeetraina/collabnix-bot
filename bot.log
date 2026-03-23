@@ -1,0 +1,36 @@
+[2026-03-23T04:57:56.020Z] [INFO ] ▶ Manual single run (DRY RUN)
+[2026-03-23T04:57:56.022Z] [INFO ] ━━━ Kubetools Bot — Starting run (sources=both, n=3, dry=true)
+[2026-03-23T04:57:56.022Z] [INFO ] Step 1: Fetching tools...
+[2026-03-23T04:57:58.101Z] [INFO ]   Fetched 60 tools total
+[2026-03-23T04:57:58.102Z] [INFO ] Step 2: Filtering already-posted items...
+[2026-03-23T04:57:58.102Z] [INFO ]   3 new items to process
+[2026-03-23T04:57:58.102Z] [INFO ] Step 3: Generating tweets with Claude...
+[2026-03-23T04:58:06.027Z] [INFO ] Step 4: Posting to Twitter...
+[2026-03-23T04:58:11.032Z] [INFO ] ────────────────────────────────────────────────────────────
+[2026-03-23T04:58:11.032Z] [INFO ] RUN COMPLETE @ 2026-03-23T04:58:11.032Z
+[2026-03-23T04:58:11.032Z] [INFO ]   Fetched   : 60
+[2026-03-23T04:58:11.032Z] [INFO ]   New       : 3
+[2026-03-23T04:58:11.033Z] [INFO ]   Generated : 3
+[2026-03-23T04:58:11.033Z] [INFO ]   Posted    : 3
+[2026-03-23T04:58:11.033Z] [INFO ]   Failed    : 0
+[2026-03-23T04:58:11.033Z] [INFO ]   Dry run   : true
+[2026-03-23T04:58:11.033Z] [INFO ] ────────────────────────────────────────────────────────────
+[2026-03-23T04:58:11.033Z] [INFO ] ✓ Run complete.
+[2026-03-23T04:59:04.271Z] [INFO ] ▶ Manual single run
+[2026-03-23T04:59:04.273Z] [INFO ] ━━━ Kubetools Bot — Starting run (sources=both, n=3, dry=false)
+[2026-03-23T04:59:04.274Z] [INFO ] Step 1: Fetching tools...
+[2026-03-23T04:59:06.272Z] [INFO ]   Fetched 60 tools total
+[2026-03-23T04:59:06.273Z] [INFO ] Step 2: Filtering already-posted items...
+[2026-03-23T04:59:06.273Z] [INFO ]   3 new items to process
+[2026-03-23T04:59:06.273Z] [INFO ] Step 3: Generating tweets with Claude...
+[2026-03-23T04:59:13.067Z] [INFO ] Step 4: Posting to Twitter...
+[2026-03-23T04:59:19.467Z] [INFO ] ────────────────────────────────────────────────────────────
+[2026-03-23T04:59:19.467Z] [INFO ] RUN COMPLETE @ 2026-03-23T04:59:19.467Z
+[2026-03-23T04:59:19.467Z] [INFO ]   Fetched   : 60
+[2026-03-23T04:59:19.467Z] [INFO ]   New       : 3
+[2026-03-23T04:59:19.467Z] [INFO ]   Generated : 3
+[2026-03-23T04:59:19.467Z] [INFO ]   Posted    : 3
+[2026-03-23T04:59:19.468Z] [INFO ]   Failed    : 0
+[2026-03-23T04:59:19.468Z] [INFO ]   Dry run   : false
+[2026-03-23T04:59:19.468Z] [INFO ] ────────────────────────────────────────────────────────────
+[2026-03-23T04:59:19.468Z] [INFO ] ✓ Run complete.

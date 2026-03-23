@@ -1,0 +1,11 @@
+services:
+  kubetools-bot:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      # Persist the posted-IDs tracker and log file across restarts
+      - ./data:/app/data
+    environment:
+      - NODE_ENV=production

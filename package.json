@@ -1,0 +1,20 @@
+{
+  "name": "kubetools-bot",
+  "version": "1.0.0",
+  "description": "Automated Kubernetes tool tweets from HN & GitHub, powered by Claude AI",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "once": "node run-once.js",
+    "dry": "node run-once.js --dry-run"
+  },
+  "keywords": ["kubernetes", "twitter-bot", "claude-ai", "devops"],
+  "author": "Ajeet Singh Raina (@ajeetraina)",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "dotenv": "^16.0.0",
+    "node-cron": "^3.0.0",
+    "twitter-api-v2": "^1.15.0"
+  }
+}
