@@ -38,23 +38,19 @@ Rules:
   });
 
   const text = response.choices[0]?.message?.content?.trim();
-
   if (!text) throw new Error("Empty response from OpenAI");
   if (text.length > 280) {
     console.warn(`  [Generator] Tweet too long (${text.length} chars), truncating`);
     return text.substring(0, 277) + "...";
   }
-
   return text;
 }
 
 async function generateTweets(items, delayMs = 1500) {
   const results = [];
-
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
     console.log(`  [Generator] ${i + 1}/${items.length} → ${item.title}`);
-
     try {
       const tweet = await generateTweet(item);
       results.push({ ...item, tweet });
@@ -63,12 +59,10 @@ async function generateTweets(items, delayMs = 1500) {
       console.error(`  [Generator] ✗ Failed: ${e.message}`);
       results.push({ ...item, tweet: null, error: e.message });
     }
-
     if (i < items.length - 1) {
       await new Promise((r) => setTimeout(r, delayMs));
     }
   }
-
   return results;
 }
 

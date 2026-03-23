@@ -2,12 +2,9 @@ name: Kubetools Tweet Bot
 
 on:
   schedule:
-    # Runs at 00:00 and 17:00 UTC — roughly every 17 hours
-    # 00:00 UTC = 5:30am IST | 17:00 UTC = 10:30pm IST
-    - cron: '0 0 * * *'
-    - cron: '0 17 * * *'
+    - cron: '0 0 * * *'   # 5:30am IST
+    - cron: '0 17 * * *'  # 10:30pm IST
 
-  # Manual trigger from GitHub Actions UI
   workflow_dispatch:
     inputs:
       dry_run:
@@ -55,3 +52,4 @@ jobs:
           name: bot-log-${{ github.run_id }}
           path: bot.log
           retention-days: 7
+

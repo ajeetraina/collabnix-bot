@@ -1,0 +1,7 @@
+node_modules/
+.env
+.posted-ids.json
+bot.log
+data/
+package
+package-lock.json
